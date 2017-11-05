@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AuthModule, OidcSecurityService, OpenIDImplicitFlowConfiguration } from 'angular-auth-oidc-client';
+import { AutoLoginComponent } from './auto-login/auto-login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AutoLoginComponent
   ],
   imports: [
     BrowserModule,
@@ -30,11 +32,12 @@ export class AppModule {
     // OIDC provider - verify with reading openid-configuration
     // https://accounts.google.com/.well-known/openid-configuration
     openIDImplicitFlowConfiguration.stsServer = 'https://accounts.google.com';
-    openIDImplicitFlowConfiguration.redirect_url = 'https://localhost:4200'; //ng serve
-    openIDImplicitFlowConfiguration.client_id = '347457883359-64didimqg2m9ci0o007lng94uf01pkqv.apps.googleusercontent.com'; //rasor's public
+    openIDImplicitFlowConfiguration.redirect_url = 'http://localhost:4200'; // ng serve
+    openIDImplicitFlowConfiguration.client_id =
+      '347457883359-64didimqg2m9ci0o007lng94uf01pkqv.apps.googleusercontent.com'; // rasor's public
     openIDImplicitFlowConfiguration.response_type = 'id_token token';
-    openIDImplicitFlowConfiguration.scope = 'openid email profile'; //ng requests this info
-    openIDImplicitFlowConfiguration.post_logout_redirect_uri = 'https://localhost:4200/Unauthorized';
+    openIDImplicitFlowConfiguration.scope = 'openid email profile'; // ng requests this info
+    openIDImplicitFlowConfiguration.post_logout_redirect_uri = 'http://localhost:4200/Unauthorized';
     openIDImplicitFlowConfiguration.post_login_route = '/home';
     openIDImplicitFlowConfiguration.forbidden_route = '/Forbidden';
     openIDImplicitFlowConfiguration.unauthorized_route = '/Unauthorized';
