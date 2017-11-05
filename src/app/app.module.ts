@@ -28,7 +28,7 @@ import { AutoLoginComponent } from './auto-login/auto-login.component';
 export class AppModule {
   constructor(public oidcSecurityService: OidcSecurityService) {
 
-    let openIDImplicitFlowConfiguration = new OpenIDImplicitFlowConfiguration();
+    const openIDImplicitFlowConfiguration = new OpenIDImplicitFlowConfiguration();
     // OIDC provider - verify with reading openid-configuration
     // https://accounts.google.com/.well-known/openid-configuration
     openIDImplicitFlowConfiguration.stsServer = 'https://accounts.google.com';
