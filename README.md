@@ -1,6 +1,6 @@
 # angular-cli-auth-oidc-sample-google-openid
 
-On top of the [initialial template](# The Initial template) this project aims to port angular-oidc-oauth2-client-with-google-identity-platform using
+On top of the [initialial template](#the-initial-template) this project aims to port angular-oidc-oauth2-client-with-google-identity-platform using
 
 * [basic guide](https://damienbod.com/2017/06/16/angular-oidc-oauth2-client-with-google-identity-platform/) and
 * [auto redirect guide](https://damienbod.com/2017/09/26/auto-redirect-to-an-sts-server-in-an-angular-app-using-oidc-implicit-flow/)
