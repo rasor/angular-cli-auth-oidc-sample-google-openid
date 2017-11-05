@@ -1,0 +1,17 @@
+# Troubleshooting info
+
+Before redirect_uri was set at Google, then this error appeared:
+https://accounts.google.com/o/oauth2/v2/auth?client_id=347457883359-64didimqg2m9ci0o007lng94uf01pkqv.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A4200&response_type=id_token%20token&scope=openid%20email%20profile&nonce=N0.17799031360861961509908504379&state=15099081286750.7713095213183834
+
+Error: redirect_uri_mismatch
+The redirect URI in the request, http://localhost:4200, does not match the ones authorized for the OAuth client. Visit https://console.developers.google.com/apis/credentials/oauthclient/347457883359-64didimqg2m9ci0o007lng94uf01pkqv.apps.googleusercontent.com?project=347457883359
+to update the authorized redirect URIs.
+
+Request Details
+client_id=347457883359-64didimqg2m9ci0o007lng94uf01pkqv.apps.googleusercontent.com
+redirect_uri=http://localhost:4200
+response_type=id_token token
+scope=openid email profile
+nonce=N0.00207277368840341761509903820276
+state=15099038202760.618204808233854
+That’s all we know.
