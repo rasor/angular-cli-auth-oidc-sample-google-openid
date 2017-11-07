@@ -9,9 +9,10 @@ import { OidcSecurityService, AuthorizationResult} from 'angular-auth-oidc-clien
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnDestroy {
+  title = 'app';
+
   // https://github.com/damienbod/angular-auth-oidc-sample-google-openid/blob/master/src/AngularClient/angularApp/app/app.component.ts
-  constructor(public oidcSecurityService: OidcSecurityService, private router: Router)
-  {
+  constructor(public oidcSecurityService: OidcSecurityService, private router: Router) {
     if (this.oidcSecurityService.moduleSetup) {
         this.onOidcModuleSetup();
     } else {
@@ -84,6 +85,4 @@ export class AppComponent implements OnDestroy {
   private write(key: string, value: any): void {
     localStorage.setItem(key, JSON.stringify(value));
   }
-
-  title = 'app';
 }
