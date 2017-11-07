@@ -11,6 +11,8 @@ export class NavigationComponent implements OnInit, OnDestroy {
 
   isAuthorizedSubscription: Subscription;
   isAuthorized: boolean;
+  // https://github.com/valor-software/ngx-bootstrap/issues/540#issuecomment-272884775
+  isCollapsed = true;
 
   constructor(public oidcSecurityService: OidcSecurityService) {
   }
@@ -24,6 +26,10 @@ export class NavigationComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
       this.isAuthorizedSubscription.unsubscribe();
+  }
+
+  toggleCollapse(): void {
+    this.isCollapsed = !this.isCollapsed;
   }
 
   login() {
