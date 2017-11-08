@@ -10,13 +10,17 @@ import { AuthModule, OidcSecurityService, OpenIDImplicitFlowConfiguration } from
 import { AutoLoginComponent } from './auto-login/auto-login.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ForbiddenComponent } from './forbidden/forbidden.component';
+import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AutoLoginComponent,
     HomeComponent,
-    NavigationComponent
+    NavigationComponent,
+    ForbiddenComponent,
+    UnauthorizedComponent
   ],
   imports: [
     BrowserModule,
