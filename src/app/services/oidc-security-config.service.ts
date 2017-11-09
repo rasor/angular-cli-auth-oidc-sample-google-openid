@@ -2,7 +2,7 @@ import { OidcSecurityService, OpenIDImplicitFlowConfiguration } from 'angular-au
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class WrappedOidcSecurityService {
+export class OidcSecurityConfigService {
 
   constructor(public oidcSecurityService: OidcSecurityService) {
 
