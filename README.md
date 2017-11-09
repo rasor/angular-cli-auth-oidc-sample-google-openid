@@ -1,13 +1,13 @@
 # angular-cli-auth-oidc-sample-google-openid
 
-On top of the initial [Angular CLI template](#the-initial-template) (``ng new yourproject`) this project applies the OIDC auto-logon from [angular-oidc-oauth2-client-with-google-identity-platform](https://github.com/damienbod/angular-auth-oidc-sample-google-openid) using
+On top of the initial [Angular CLI template](#the-initial-template) (`ng new yourproject`) this project applies the OIDC auto-logon from [angular-oidc-oauth2-client-with-google-identity-platform](https://github.com/damienbod/angular-auth-oidc-sample-google-openid) using
 
 * [Basic guide](https://damienbod.com/2017/06/16/angular-oidc-oauth2-client-with-google-identity-platform/) and
 * [Auto redirect guide](https://damienbod.com/2017/09/26/auto-redirect-to-an-sts-server-in-an-angular-app-using-oidc-implicit-flow/)
 
 Find even more [detailed info from the author Damien on Agular using OIDC Implicit Flow](https://damienbod.com/2016/03/02/angular2-openid-connect-implicit-flow-with-identityserver4/comment-page-1/)
 
-# Credits
+## Credits
 
 All credits to [@damien_bod]‏(https://twitter.com/damien_bod)
 
@@ -17,7 +17,7 @@ All credits to [@damien_bod]‏(https://twitter.com/damien_bod)
 
 This project was generated with [NgProjectTemplate](https://github.com/andfomin/NgProjectTemplate) version 1.0.8.0.
 
-# AngularCliAuthOidcSampleGoogleOpenid
+## AngularCliAuthOidcSampleGoogleOpenid
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
