@@ -9,7 +9,7 @@ Find even more [detailed info from the author Damien on Agular using OIDC Implic
 
 ## Credits
 
-All credits to [@damien_bod]‏(https://twitter.com/damien_bod)
+All credits to[ @damien_bod]‏(https://twitter.com/damien_bod)
 
 --------------------------------
 
