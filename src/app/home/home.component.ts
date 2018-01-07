@@ -1,3 +1,4 @@
+import { ChapterService } from './../services/chapter.service';
 import { OidcSecurityService } from 'angular-auth-oidc-client';
 import { Subscription } from 'rxjs/Subscription';
 import { Component, OnInit, OnDestroy } from '@angular/core';
@@ -17,7 +18,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   isAuthorizedSubscription: Subscription;
   isAuthorized: boolean;
 
-  constructor(public oidcSecurityService: OidcSecurityService) {
+  constructor(public oidcSecurityService: OidcSecurityService, public chapterService: ChapterService) {
       this.message = 'HomeComponent constructor';
   }
 
@@ -43,4 +44,9 @@ export class HomeComponent implements OnInit, OnDestroy {
       this.userDataSubscription.unsubscribe();
       this.isAuthorizedSubscription.unsubscribe();
   }
+
+  doGET() {
+      this.chapterService.doGET();
+  }
+
 }
